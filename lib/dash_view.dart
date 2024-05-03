@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:loginn/chtadvokat1.dart';
 import 'package:loginn/global_colors.dart';
 import 'package:loginn/notif_view.dart';
 import 'package:loginn/profile_advokat1.dart';
@@ -96,8 +97,8 @@ class DashboardView extends StatelessWidget {
                             children: [
                               InkWell(
                                 onTap: (){
-                                  // Navigator.push(context, 
-                                  //    MaterialPageRoute(builder: (context) => const ChatdgnAdvokat()));
+                                  Navigator.push(context, 
+                                     MaterialPageRoute(builder: (context) => const ChtAdvokat1View()));
                                 },
                                 splashColor: GlobalColors.btnColor,
                                 child: Center(
