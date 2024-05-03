@@ -175,7 +175,7 @@ class DashboardView extends StatelessWidget {
                                       height: 65,
                                       width: 65,
                                       ),
-                                      Text('Meeting Online',
+                                      Text('Buat Meeting Online',
                                       style: GoogleFonts.ubuntu(
                                         fontSize: 12,
                                         fontWeight: FontWeight.w500),

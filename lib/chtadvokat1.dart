@@ -20,10 +20,10 @@ class _ChtAdvokat1ViewState extends State<ChtAdvokat1View> {
   @override
   Widget build(BuildContext context) {
     List<List> data = [
-      ['5 Tahun', '4,6', 'Perempuan'],     
+      ['5 Tahun', '4,6', 'Makassar'],     
     ];
     
-    List<String> titles = ['Pengalaman', 'Rating', 'Jenis Kelamin'];
+    List<String> titles = ['Pengalaman', 'Rating', 'Kabupaten/Kota'];
 
     return Scaffold(
       appBar: AppBar(
