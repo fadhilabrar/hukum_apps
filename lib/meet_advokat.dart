@@ -2,18 +2,17 @@ import 'package:data_filters/data_filters.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:loginn/global_colors.dart';
-import 'package:loginn/profile_notaris1.dart';
+import 'package:loginn/pilih_layanan_meeting.dart';
 
-class PilihNotarisView extends StatefulWidget {
-  const PilihNotarisView({super.key});
+class MeetingAdvokatView extends StatefulWidget {
+  const MeetingAdvokatView({super.key});
 
   @override
-  State<PilihNotarisView> createState() => _PilihNotarisViewState();
+  State<MeetingAdvokatView> createState() => _MeetingAdvokatViewState();
 }
 
-class _PilihNotarisViewState extends State<PilihNotarisView> {
+class _MeetingAdvokatViewState extends State<MeetingAdvokatView> {
   List<int>? filterIndex;
-
   @override
   Widget build(BuildContext context) {
     List<List> data = [
@@ -27,7 +26,7 @@ class _PilihNotarisViewState extends State<PilihNotarisView> {
         foregroundColor: Colors.white,
         backgroundColor: GlobalColors.mainColor,
         title: Text(
-          'Pilih Notaris/PPAT',
+          'Pilih Advokat',
           style: GoogleFonts.ubuntu(
             fontSize: 16,
             fontWeight: FontWeight.bold,
@@ -65,7 +64,7 @@ class _PilihNotarisViewState extends State<PilihNotarisView> {
                         InkWell(
                                 onTap: (){
                                   Navigator.push(context, 
-                                  MaterialPageRoute(builder: (context) => const ProfileNotaris1View()));
+                                  MaterialPageRoute(builder: (context) => const LayananMeeting()));
                                 },
                                 splashColor: GlobalColors.btnColor,
                                 child: Container(

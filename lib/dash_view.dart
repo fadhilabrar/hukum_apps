@@ -2,8 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:loginn/chatnotaris.dart';
 import 'package:loginn/chtadvokat1.dart';
 import 'package:loginn/global_colors.dart';
+import 'package:loginn/meet_advokat.dart';
 import 'package:loginn/notif_view.dart';
 import 'package:loginn/profile_advokat1.dart';
 import 'package:loginn/profile_advokat2.dart';
@@ -121,7 +123,10 @@ class DashboardView extends StatelessWidget {
                               ),
 
                               InkWell(
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(context, 
+                                     MaterialPageRoute(builder: (context) => const PilihNotarisView()));
+                                },
                                 splashColor: GlobalColors.btnColor,
                                 child: Center(
                                   child: Column(
@@ -165,7 +170,10 @@ class DashboardView extends StatelessWidget {
                               ),
 
                               InkWell(
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(context, 
+                                     MaterialPageRoute(builder: (context) => const MeetingAdvokatView()));
+                                },
                                 splashColor: GlobalColors.btnColor,
                                 child: Center(
                                   child: Column(
