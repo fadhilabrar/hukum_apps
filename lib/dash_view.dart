@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:loginn/buat_janji_offline.dart';
 import 'package:loginn/chatnotaris.dart';
 import 'package:loginn/chtadvokat1.dart';
 import 'package:loginn/global_colors.dart';
@@ -148,7 +149,10 @@ class DashboardView extends StatelessWidget {
                               ),
 
                               InkWell(
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(context, 
+                                     MaterialPageRoute(builder: (context) => const JanjiOfflineView()));
+                                },
                                 splashColor: GlobalColors.btnColor,
                                 child: Center(
                                   child: Column(
