@@ -65,7 +65,6 @@ class DashboardView extends StatelessWidget {
 
             //Bagian Menu
             Container(
-              height: 1010,
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
